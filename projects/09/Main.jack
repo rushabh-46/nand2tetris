@@ -1,0 +1,26 @@
+
+class Main {
+    function void main() {
+        var Array a;
+        var int size;
+        var int i;
+        
+        let size = Keyboard.readInt("What is size of array? ");
+        let i = 0;
+        while(i<size) {
+            let a[i] = KeyBoard.readInt("Enter the number : ");
+            let i = i + 1;
+        }
+        
+        let i = BubbleSort.S(a,size);
+        
+        let i = 0;
+        while(i<size) {
+            do Output.printInt(a[i]);
+            do Output.printString(" ");
+        }
+        do Output.println();
+        return;
+    }
+}
+  

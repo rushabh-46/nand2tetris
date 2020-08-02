@@ -1,0 +1,30 @@
+class Bitmap {
+
+	method void drawBitmap() {
+		do Bitmap.draw(10);
+		return;
+	}
+
+function void draw(int location) {
+
+		var int memAddress;
+		let memAddress = 16384+location;
+		do Memory.poke(memAddress+0, 4088);
+		do Memory.poke(memAddress+32, 2056);
+		do Memory.poke(memAddress+64, 2056);
+		do Memory.poke(memAddress+96, 2056);
+		do Memory.poke(memAddress+128, 2056);
+		do Memory.poke(memAddress+160, 2056);
+		do Memory.poke(memAddress+192, 2056);
+		do Memory.poke(memAddress+224, 4088);
+		do Memory.poke(memAddress+256, 24);
+		do Memory.poke(memAddress+288, 40);
+		do Memory.poke(memAddress+320, 72);
+		do Memory.poke(memAddress+352, 136);
+		do Memory.poke(memAddress+384, 264);
+		do Memory.poke(memAddress+416, 520);
+		do Memory.poke(memAddress+448, 1032);
+		do Memory.poke(memAddress+480, 14344);
+		return;
+	}
+}
